@@ -1,0 +1,460 @@
+work_id,conference_label,conference_short_title,conference_theme_title,conference_year,conference_organizers,conference_series,conference_hosting_institutions,conference_city,conference_state,conference_country,conference_url,work_title,work_url,work_authors,work_type,full_text,full_text_type,full_text_license,parent_work_id,keywords,languages,topics
+1582,2013 - Nebraska,Nebraska,Freedom to Explore,2013,ADHO,ADHO,University of Nebraska–Lincoln,Lincoln,Nebraska,United States,http://dh2013.unl.edu/,Voyant Notebooks: Literate Programming and Programming Literacy,,Stéfan Sinclair;Geoffrey Rockwell,poster / demo / art installation,"Some thirty years ago Donald Knuth, a computer scientist, proposed literate programming as a better way of organizing narrative and code (1984). Knuth argued that more emphasis should be placed on explaining to humans what computers are meant to do, rather than simply instructing computers what to do. Knuth was especially interested in weaving together macrostyle code snippets with prose that provided a larger narrative context, not merely functional comments of specific lines of code that are the distilled remnants of an intellectual process.
+Literate programming has been more influential in theory than in practice (Nørmark), despite several utilities and environments including Mathematica, Knuth's (C)WEB, Sweave for R, and Marginalia for Clojure. Perhaps the exigencies of programming in the real world correspond poorly with the vision of Knuth of the programmer as author: ""the practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style"" (1992, 1). However, that balance of essayist and coder strikes us as perfectly appropriate for the digital humanities, a natural blend of the expression of intellectual process with the exposition of technical methodologies. The prose can gloss the code, or viceversa, in a symbiotic relationship that serves to strengthen an argument and demonstrate its own workings.
+One of the most significant potential benefits of the literate programming paradigm is pedagogical: these works can both explain an interpretive insight and present the methodology for reproducing the data or results that were part of the process. Many widely-read digital humanities blogs already present these characteristics of exploration, explanation, interpretation and step-by-step instructions (see for example blogs by Ted Underwood, Benjamin Schmidt, Lisa Rhody and Scott Weingart). Literate programming can be more self-contained and more useful for those learning new methodologies and new programming techniques. This is about the principles of literate programming, but also about the potential for increasing programming literacy.
+This poster will introduce Voyant Notebooks, a web-based literate programming environment designed for the digital humanities (see Appendix A). There is already a working prototype and we anticipate having a more feature-rich version available by July 2013. Voyant Notebooks inherits many of the characteristics of the Voyant Tools environment, including a concern for usability and flexibility (researchers and students should be able to use it with minimal or no training and with their own texts of interest). Voyant Notebooks also addresses one of the main weaknesses of Voyant Tools: the fact that most tools are constrained by assumptions about how they would be most commonly used. For instance, the Wordle-like (word cloud) Cirrus tool is designed to show the top frequency terms from a corpus or document; but what if the user instead wants to visualize the top frequency nouns, or people, or repeating phrases? All of that functionality could be built into the tool, but possibly at the cost of usability (endless menus and options), and it could still never address all of the possible use cases. Voyant Notebooks, by contrast, empowers the user to customize some of the functionality by leveraging the analytic capabilities of the Voyant back-end and the visualization interfaces in the front-end (like Cirrus). Our poster will have two parts, a) a usable demonstration on one or more laptops and b) a poster that illustrates how Voyant Notebooks implements Knuth’s concept of literate programming. In addition to these conceptual aspects, the poster will outline technical details about the Voyant Notebooks prototype for those interested, including the technologies used for both client-side (browser) and server-side components. Some of the technical challenges that will be described include:
+•        managing the flow of code execution in an asynchronous architecture,
+•        using web workers to avoid browser freezes during longer executions,
+•        mitigating the security risks of user-defined and persistent Javascript code,
+•        code variable scoping across editor instances and window components,
+•        embedding of Voyant tool panels (visualizations) and other services,
+•        developing a flexible API for different programming levels and styles,
+•        developing an API that includes both client-side and server-side operations, and
+•        ensuring efficiency of repeated code snippets during writing and viewing.
+And of course, visitors to the poster session will be warmly encouraged to play with Voyant Notebooks.
+Appendix A: Mockup of Voyant Notebooks (previously called Voyeur Notebooks).
+ 
+Figure 1:
+Mockup of Voyant Notebooks
+References
+Knuth, D. (1984). Literate Programming. The Computer Journal 27(2): 97-111, 1.
+Knuth, D. (1992). Literate Programming. Stanford University Center for the Study of Language and Information.
+Nørmark, K. (1998). Literate Programming: Issues and Problems. http://www.cs.aau.dk/~normark/litpro/issues-and-problems.html.
+Sinclair, S. and G. Rockwell (2012). Teaching Computer-Assisted Text Analysis: Approaches to Learning New Methodologies. in Digital Humanities Pedagogy. Open Book Publishers.",txt,This text is republished here with permission from the original rights holder.,,literate computing;text analysis;voyant,English,text analysis
+2239,2015 - Sydney,Sydney,Global Digital Humanities,2015,ADHO,ADHO,Western Sydney University,Sydney,,Australia,https://web.archive.org/web/20190121165412/http://dh2015.org/,DREaM: Distant Reading Early Modernity,https://github.com/ADHO/dh2015/blob/master/xml/WITTEK_Stephen_DREaM__Distant_Reading_Early_Modernity.xml,Stephen Wittek;Stéfan Sinclair;Matthew Milner,"paper, specified ""short paper""","<?xml version=""1.0"" encoding=""UTF-8""?>
+<TEI xmlns=""http://www.tei-c.org/ns/1.0"">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>DREaM: Distant Reading Early Modernity</title>
+                <author>
+                    <persName>
+                        <surname>Wittek</surname>
+                        <forename>Stephen</forename>
+                    </persName>
+                    <affiliation>McGill University, Canada</affiliation>
+                    <email>stephen.wittek@mcgill.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sinclair</surname>
+                        <forename>Stéfan</forename>
+                    </persName>
+                    <affiliation>McGill University, Canada</affiliation>
+                    <email>stefan.sinclair@mcgill.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Milner</surname>
+                        <forename>Matthew</forename>
+                    </persName>
+                    <affiliation>McGill University, Canada</affiliation>
+                    <email>matthew.milner@mcgill.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2014-12-19T13:50:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Paul Arthur, University of Western Sidney</publisher>
+                <address>
+                    <addrLine>Locked Bag 1797</addrLine>
+                    <addrLine>Penrith NSW 2751</addrLine>
+                    <addrLine>Australia</addrLine>
+                    <addrLine>Paul Arthur</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document </p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident=""DHCONVALIDATOR"" version=""1.9"">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme=""ConfTool"" n=""category"">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme=""ConfTool"" n=""subcategory"">
+                    <term>Short Paper</term>
+                </keywords>
+                <keywords scheme=""ConfTool"" n=""keywords"">
+                    <term>early modern</term>
+                    <term>eebo</term>
+                    <term>voyant</term>
+                    <term>topic modeling</term>
+                    <term>distant reading</term>
+                </keywords>
+                <keywords scheme=""ConfTool"" n=""topics"">
+                    <term>archives</term>
+                    <term>repositories</term>
+                    <term>sustainability and preservation</term>
+                    <term>corpora and corpus activities</term>
+                    <term>literary studies</term>
+                    <term>content analysis</term>
+                    <term>bibliographic methods / textual studies</term>
+                    <term>interdisciplinary collaboration</term>
+                    <term>digital humanities - pedagogy and curriculum</term>
+                    <term>english studies</term>
+                    <term>renaissance studies</term>
+                    <term>media studies</term>
+                    <term>data mining / text mining</term>
+                    <term>English</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Our proposed paper will provide an overview of the theory and methodology driving the creation of Distant Reading Early Modernity (DREaM), a digital humanities project that has made a massive corpus of early modern texts amenable for use with macro-scale analytical tools. Key focus areas include the technical challenges deriving from non-standardized spelling, the philosophy of our tutorial program, the argument for our approach to the early modern archive, and the potential benefit to early modern scholarship of distant reading techniques. </p>
+            <p>From Microfilm Library, to EEBO, to EEBO-TCP, to DREaM </p>
+            <p>The foundational work for DREaM began in 1934, when Eugene B. Power used parts of two movie and still cameras to create one of the world’s first microfilm bookcameras, a device he used to photograph thousands of texts in British libraries (Anderson and Power, 1990). In 1998 Power’s microfilm library became the basis for Early English Books Online (EEBO), a database that comprises the images for some 125,000 texts from 1475 to 1700, and has profoundly expanded the horizons of early modern research.
+                <hi rend=""superscript"">1</hi> To date, approximately one-third of the documents on EEBO are available as transcribed, full-text editions. Researchers for the EEBO Text Creation Partnership (EEBO-TCP) are currently working to transcribe the remaining 85,000 documents, which are as yet only available as digitized microfilm images.
+                <hi rend=""superscript"">2</hi>
+            </p>
+            <p>Although completion of the transcription work is still at least 10 years in the future, the prospect of a full-text library of all documents from the first 225 years of English print points to the need for some careful re-thinking about the relation between scholarship and archival sources. As it now stands, the EEBO-TCP corpus amounts to 8.02 gigabytes of XML-encoded text and contains nearly 45,000 documents, for a grand total of well over a billion words (1,155,264,343 by our count). Confronted by the sheer expanse of a corpus several magnitudes larger than anything one could hope to read in a lifetime, early modern scholarship must now work to incorporate digital methodologies that enable a bird’s-eye view of large corpora, an approach that Franco Moretti has dubbed ‘distant reading’ (Moretti, 2007). DREaM has begun the work of making such a view possible. </p>
+            <p>Unlike EEBO, DREaM enables batch downloading of custom-defined subsets rather than obliging users to download individual texts on a one-by-one basis. In other words, it functions at the level of ‘sets of texts’ (sometimes called 
+                <hi rend=""italic"">worksets</hi>) rather than ‘individual texts’. Examples of subsets one might potentially generate include ‘all texts by Ben Jonson’, ‘all texts published in 1623’, or ‘all texts printed by John Wolfe’. A user-friendly interface makes subsets available as either plain text or XML-encoded files, and gives users the option to automatically name individual files by date, author, title, or combinations thereof (this file naming flexibility can be useful when interoperating with other tool suites). 
+            </p>
+            <p>The ability to generate custom-defined subsets is important because it allows researchers to explore the early modern canon with distant reading techniques, and to capture otherwise intractable data with visualizations such as graphs, charts, or other forms of graphic representation. On this note, another key feature of DREaM is that it allows users to transfer specially tailored subsets directly to the analytic interfaces of Voyant Tools (voyant-tools.org), a suite of textual visualization tools that collectively constitute the leading platform for open-access digital humanities research.
+                <hi rend=""superscript"">3</hi> In fact, DREaM is actually implemented within Voyant Tools (version 2.0, not yet released, which provides much better support for very large text collections). DREaM thus provides a compelling example of a bridge between massive full-text repositories (that typically provide faceted searching) and more specialized analytic and visualization environments. By enabling simple transference between the EEBO-TCP archive and Voyant, DREaM has significantly expanded the range and sophistication of technologies currently available to researchers who wish to gain a broad sense of printed matter in early modern England. 
+            </p>
+            <p>Notably, however, DREaM does not aim to replace EEBO, or to supplant conventional forms of research. Rather, our goal is to simply add a new item to the scholar’s toolbox, and to increase transferability between distant reading methodologies and more fine-grained forms of analysis. </p>
+            <p>
+                <hi rend=""bold"">Negotiating the Complexities of Non-Standardized Spelling</hi>
+            </p>
+            <p>Standardized spelling had yet to emerge in early modernity: writers had the freedom to spell however they pleased. To take a famous example, the name ‘Shakespeare’ has 80 different recorded spellings, including ‘Shaxpere’ and ‘Shaxberd’. As one might imagine, variance on this scale presents a serious challenge for large-scale textual analysis. How is it possible to track the incidence of a specific word, or group of words, if any given word could have an unknown multiplicity of iterations? </p>
+            <p>To address this problem, we enlisted the assistance of VARD 2, a tool that helps to improve the accuracy of textual analysis by finding candidate modern form replacements for spelling variants in historical texts.
+                <hi rend=""superscript"">4</hi> As with conventional spellcheckers, a user can choose to process texts manually (selecting a candidate replacement offered by the system), automatically (allowing the system to use the best candidate replacement found), or semi-automatically (training the tool on a sample of the corpora). 
+            </p>
+            <p>After some preliminary training, we ran the TCP-EEBO corpus through VARD using the default settings (auto normalization at a threshold of 50%). Rather than using the ‘batch’ mode—which proved unreliable for such a big job—we wrote a script that normalized the texts on a one-by-one basis from the command-line. This process took about three days on a commodity machine. VARD normalized 80,676 terms for a grand total of 44,909,676 changes overall. </p>
+            <p>A careful check through the list resulted in 373 term normalizations that we found problematic in one way or another. The problematic normalizations amounted to 462,975 changes overall, or only 1.03% of the total number of changes. These results were satisfactory: our goal was not to make the corpus ‘perfectly normalized’ (an impossibility, not least because perfection is debatable in this context), but, more pragmatically, to make it generally normalized, which is the best one can reasonably expect from an automatic process. On this point, it is important to note that VARD encodes a record of all changes within the output XML file, so scholars will be able to see if the program has made an erroneous normalization. </p>
+            <p>Some of the problematic VARD normalizations seem to have derived from a dictionary error. For example, ‘chan’ became ‘champion’ and ‘ged’ became ‘general’. In other instances, the problematic normalizations were ambiguous or borderline cases that we preferred to simply leave unchanged. Examples include ‘piece’ for ‘peece’, and ‘land’ for ‘iland’. There were also cases where the replacement term was not quite correct: ‘strawberie’ became ‘strawy’ rather than ‘strawberry’, and ‘hoouering’ became ‘hoovering’ rather than ‘hovering’. We fixed as many of these kinks as we could by making adjustments to the VARD training file and running the entire corpus through the normalization process a second time. </p>
+            <p>Of course, it is not difficult to imagine scenarios wherein a researcher may prefer to work with original spellings rather than normalized texts. With such projects in mind, we have kept both normalized and non-normalized versions of the EEBO-TCP corpus. </p>
+            <p>
+                <hi rend=""bold"">The DREaM Tutorial Program</hi>
+            </p>
+            <p>As noted above, one of the central objectives of DREaM is to create an interface that will maximize user-friendliness, allowing scholars with a minimal level of technical expertise to quickly and efficiently create subsets tailored for whatever specific research question they wish to pursue. We are building DREaM for our own research, but we also have a much broader pedagogical perspective in mind. To meet this objective, we have launched a pilot tutorial program, currently under way, that will teach scholars how to use DREaM, but will also point to ways in which DREaM could more effectively serve the demands of scholarly investigation. </p>
+            <p>In a series of tasks that build toward the production of a short case-study report, pilot users must articulate a detailed research question and provide a description of their argument. In addition to establishing a valuable feedback loop for the project, this assignment aims to nudge new users toward a more comprehensive, more practical understanding of how macro-scale textual analysis can complement scholarly practice. The key conceptual challenge, as we see it, hinges on new users’ ability to understand, and learn to negotiate, the gap between distant reading and more conventional means of engaging archival sources. </p>
+            <p>Our pool of pilot users derives from the membership of our parent project, Early Modern Conversions, a five-year interdisciplinary research initiative that has brought together a team of more than 100 scholars, partners, and graduate student associates from universities in Canada, the United States, England, New Zealand, and Australia.
+                <hi rend=""superscript"">5</hi> Early Modern Conversions provides a propitious testing ground for DREaM because it is at the vanguard of early modern research, and because it entails a rich diversity of disciplinary approaches. Our presentation for DH2015 will report on the results of the tutorial program and on the progress of the project overall. 
+            </p>
+            <p>Screenshots </p>
+            <figure>
+                <graphic n=""1001"" width=""16.002cm"" height=""12.230805555555555cm"" url=""Pictures/image1.png"" rend=""block""/>
+            </figure>
+            <p>Figure 1. The DREaM interface. Search fields in the middle of the screen enable users to define a subset of EEBO-TCP texts by keyword, year, author, and publisher. Below the search field, an ‘Export’ button opens a dialogue box that offers the option of sending the subset directly to Voyant-tools.org, or downloading it as a ZIP archive. Users may also choose to download subsets as either plain text or XML-encoded files. A drag-and-drop mechanism (bottom) enables automatic naming of files within a subset by date, author, title, or combinations thereof. </p>
+            <p>
+                <pb/>
+            </p>
+            <figure>
+                <graphic n=""1002"" width=""16.002cm"" height=""8.651875cm"" url=""Pictures/image2.png"" rend=""block""/>
+            </figure>
+            <p>Figure 2. A sample subset transferred to Voyant Tools. Beginning in the top left corner, one sees a word cloud representing the frequency of keywords in terms of font size. At a glance, it shows that the highest frequency words in the subset are ‘good’ and ‘come’. Below the word cloud, there is a summary that lists statistics for basic categories such as word count, vocabulary density, word frequency, etc. In addition, the summary lists words that have a notably high frequency for each year: ‘Rome’ and ‘death’ appeared with particular frequency in 1594, while ‘virtue’ and ‘envy’ stood out in 1612. Moving to the bottom left corner, one sees an ordered list of frequencies for each word in the corpus accompanied by a thumbnail graph that tracks the frequency of words over the 40-year delimitation. At a glance, the tool shows a significant spike for the word ‘knight’ in 1624. In the middle of the screen, a ‘Corpus Reader’ tool enables users to drill down into the corpus to examine the context for particular terms. </p>
+            <p>Notes</p>
+            <p>1. See http://eebo.chadwyck.com.</p>
+            <p>2. See http://eebo.odl.ox.ac.uk/e/eebo/.</p>
+            <p>3. See http://voyant-tools.org.</p>
+            <p>4. See http://ucrel.lancs.ac.uk/vard/about/.</p>
+            <p>5. See http://earlymodernconversions.com.</p>
+        </body>
+        <back>
+            <div type=""bibliogr"">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend=""bold"">Anderson, R. and Power, E. B.</hi> (1990). The Autobiography of Eugene B. Power, Founder of University Microfilms. UMI, Ann Arbor, MI.
+                    </bibl>
+                    <bibl>
+                        <hi rend=""bold"">Moretti, F.</hi> (2007). Graphs, Maps, Trees: Abstract Models for Literary History. Verso, London.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>",xml,Creative Commons Attribution 4.0 International,,distant reading;early modern;eebo;topic modeling;voyant,English,"archives, repositories, sustainability and preservation;bibliographic methods / textual studies;content analysis;corpora and corpus activities;data mining / text mining;digital humanities - pedagogy and curriculum;english;english studies;interdisciplinary collaboration;literary studies;media studies;renaissance studies"
+4160,2017 - Montréal,Montréal,Access/Accès,2017,ADHO,ADHO,McGill University;Université de Montréal,Montréal,,Canada,https://dh2017.adho.org/,Scaffolded Hermeneutica for Literary Scholars with Novice Technical Skills,https://dh2017.adho.org/abstracts/601/601.pdf,Jeremy Browne,"paper, specified ""short paper""","Hermeneutica
+In Hermeneutica, Geoffrey Rockwell and Stéfan Sinclair (2016) argue for an approach to the digital humanities that deemphasizes the tool and positivist notions of proof. Their proposed approach, also called Hermeneutica, champions tool accessibility over tool sophistication. Similarly, scholarly play is legitimated as a useful step in developing research questions and as a means to reconsider established notions within literary disciplines. The aim of Hermeneutica as a methodology seems to be the generation of interesting humanistic questions as much as the resolution of open questions.
+
+Rockwell and Sinclair demonstrate the difference between Hermeneutica and typical DH approaches by quoting from Gary Wong's 2009 blog post:
+
+[Typical DH] takes the worst part of the scientific papers (really really long sets of tabular data in the body of the text) and the worst part of papers from the humanities (really really complicated language where simple language would have done) and puts it in one. If this is what the cooperation of computational text analysis and traditional literary analysis yield, I
+
+am scared.
+
+Because Hermeneutica attempts to join the best parts of these fields, it has the potential to turn DH into a discipline that is more useful for the vast majority of non-DH humanists. It could be the means of accelerating the mainstreaming of DH methods and bringing us to the eventual point where all humanities are digital—a destination Claire Clivaz described succinctly (DARIAH, 2016).
+
+Voyant
+One feature that distinguishes Hermeneutica from many other DH approaches is its companion set of tools meant to demonstrate its application. Voyant Tools, now referred to simply as Voyant, is a web-based, modular suite of tools meant to be “worth thinking with” (Rockwell and Sinclair, 2016: 10, original emphasis). The goal is to accommodate playful exploration of text and sharing of corpora across the web. It is not designed as an industrial-grade text analysis tool, but as a “toy” that allows scholars to uncover new questions and gain new appreciation of texts.
+
+Current limitations of Hermeneutica
+A fundamental component of Hermeneutica is that the scholar views text through the lens of Voyant (or other computational text analysis tools), and then synthesizes that experience with their prior knowledge of the text and its milieu. A problem that Voyant addresses, but does not solve, is that many scholars who know the most about specific texts lack the technological skills that would be considered pre-novice in DH circles. Voyant allows everyone with a text and a browser to explore word frequencies, collocations, etc., but it presupposes that the text is available and clean enough for use. In order for Hermeneutica to appeal to non-DH humanities scholars, these issues of text availability and the lack of user skill must first be addressed.
+
+On the issue of text availability, it is not often that scholars wish to analyze text that is rare or missing. More often they are interested in text that is protected by various copyright laws, which prohibit posting the text to public websites such as Voyant. Thankfully, in the Unites States at least, Google Books' recent court victory (Stohr, 2016) now permits scholars to publish online the analysis results derived from copyrighted texts, so long as the original text is not recoverable by the user. To this end Rockwell and Sinclair developed Voyant 2's “non-consumptive” mode which restricts access to tools that allow full-text views.
+
+While such developments represent Rockwell and Sinclair's amenability to meet the ever-evolving needs of Hermeneuticans, accommodating users' lack of technology skill is beyond the scope of their involvement. For example, it is not reasonable to expect the Voyant developers to be concerned over issues of text acquisition or text preparation. Rather, those con-cerns—while critical to expanding the pool of potential Hermeneuticans—are issues of local implementation. Similarly, it makes sense that Voyant would offer the ability to link to a corpus after uploading the text, but uploading the text and keeping track of various versions of corpora is beyond the scope of Voyant. A local practice of adding some structure around the
+
+Voyant suite ought to make Hermeneutica useful to a far greater audience than it is now.
+
+Scaffolding
+In the field of instructional design, such structure is called scaffolding. Specifically, scaffolding refers to the process of providing learners adequate introduction and examples before allowing them to attempt a task on their own (Bruner, 1978). For scaffolded Her-meneutica, DH-savvy professionals can work to acquire, clean, and upload text to Voyant (and other tools), and then provide public listings of the resulting corpora.
+
+Examples of scaffolded Hermeneutica
+We have implemented this scaffolded Hermeneu-tica approach in our Office of Digital Humanities beginning with the Cormac McCarthy Corpus Project (CMCP). The CMCP includes 13 Voyant corpora of McCarthy's 10 novels: one for the complete works, one for each novel, and two for novels (The Orchard Keeper and The Road) where the narration has been segregated from the dialogue. But the linchpin of scaffolded Hermeneutica is the CMCP's publicly-accessible website that organizes these Voyant corpora. The website is built on WordPress with the Pods content management plugin, and contains information on McCarthy's work, descriptions of Voyant (and other tools), and listings of links to the Voyant corpora. An essential feature of the website's structure is the ability to accommodate revisions to the current corpora as well as the addition of other tools in the future. Already, there is a non-Voyant sentence structure search tool attached as a beta-testing option.
+
+A rough version of the Cormac McCarthy Corpus Project was presented at the 2015 conference of the Cormac McCarthy Society. The reaction to these tools being available for public use was strongly positive. One attendee referred to the website as “a game-changer.”
+
+The same scaffolded Hermeneutica is being implemented on two other projects: Machado a longa distancia and The Modernist Short Fiction Project. Preliminary demonstrations of the approach have yielded similar reactions to what we observed with the CMCP. Non-DH scholars become excited rather than anxious when the digital analysis tools are scaffolded to provide them ready access. In fact, these demonstrations turn into play sessions where non-DH scholars repeatedly request for certain words to be added to the frequency charts and other Voyant panels.
+
+Hermeneutica and Voyant represent the greatest potential for growth in DH not because they are the most technologically or theoretically advanced developments, but because they are the most accessible to non-DH scholars. Still, they don't quite reach the ground level of technology skills possessed by most researchers in the humanities. The scaffolded Herme-neutica approach proposed in this paper seems to span that gap to make Hermeneutica more accessible.
+
+Bibliography
+Bruner, J. S. (1978). “The role of dialogue in language acquisition.” In Sinclair, A., Jarvelle, R., J., and W. J.M. Levelt (eds), The Child's Concept of Language. New York: Springer-Verlag.
+
+DARIAH (2016). My Digital Humanities - Part 1. YouTube.
+
+https://www.youtube.com/watch?v=I8aRtHW3b6g
+
+(accessed 1 November 2016).
+
+Rockwell, G. and Sinclair, S. (2016). Hermeneutica. Cambridge: MIT Press.
+
+Stohr, G. (2016). Google Book Project Can Proceed as Supreme Court Spurns Appeal. Bloomberg Politics. http://www.bloomberg.com/politics/articles/2016-04-18/google-book-project-can-proceed-as-top-u-s-court-spurns-appeal (accessed 1 November 2016).
+
+Conclusion",txt,Creative Commons Attribution 4.0 International,,hermenutica;text analysis;voyant,English,corpora and corpus activities;literary studies;text analysis
+7862,2015 - Sydney,Sydney,Global Digital Humanities,2015,ADHO,ADHO,Western Sydney University,Sydney,,Australia,https://web.archive.org/web/20190121165412/http://dh2015.org/,"Voyant Tools 2.0: The New, The Neat & the Gnarly",https://github.com/ADHO/dh2015/blob/master/xml/SINCLAIR_St_fan_Voyant_Tools_2_0__The_New__The_Neat___t.xml,Stéfan Sinclair;Geoffrey Rockwell,workshop / tutorial,"<?xml version=""1.0"" encoding=""UTF-8""?>
+<TEI xmlns=""http://www.tei-c.org/ns/1.0"">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Voyant Tools 2.0: The New, The Neat &amp; the Gnarly</title>
+                <author>
+                    <persName>
+                        <surname>Sinclair</surname>
+                        <forename>Stéfan</forename>
+                    </persName>
+                    <affiliation>McGill University, Canada</affiliation>
+                    <email>sgsinclair@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rockwell</surname>
+                        <forename>Geoffrey</forename>
+                    </persName>
+                    <affiliation>University of Alberta, Canada</affiliation>
+                    <email>grockwel@ualberta.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2014-12-19T13:50:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Paul Arthur, University of Western Sidney</publisher>
+                <address>
+                    <addrLine>Locked Bag 1797</addrLine>
+                    <addrLine>Penrith NSW 2751</addrLine>
+                    <addrLine>Australia</addrLine>
+                    <addrLine>Paul Arthur</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document </p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident=""DHCONVALIDATOR"" version=""1.9"">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme=""ConfTool"" n=""category"">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme=""ConfTool"" n=""subcategory"">
+                    <term>Pre-Conference Workshop and Tutorial (Round 2)</term>
+                </keywords>
+                <keywords scheme=""ConfTool"" n=""keywords"">
+                    <term>text analysis</term>
+                    <term>Voyant</term>
+                </keywords>
+                <keywords scheme=""ConfTool"" n=""topics"">
+                    <term>text analysis</term>
+                    <term>data mining / text mining</term>
+                    <term>English</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p rend=""CM4"">Voyant Tools (voyant-tools.org) is a web-based reading and analysis environment for digital texts. Users can create their own corpus of texts to study by pointing to URLs or uploading files in a variety of formats (plain text, XML, HTML, PDF, MS Word, RTF, etc.). Voyant allows users to navigate between macro views of the corpus (e.g., a word cloud visualization of the entire corpus) and micro views (e.g., a reading individual occurrences of a specific term in context). The default interface provides access to a basic set of tools for reading texts and studying word frequency and distribution. There are also more tools available in various pre-defined or user-defined ‘skins’ (a layout of tools that are coupled). </p>
+            <p rend=""CM4"">Voyant Tools is deliberately designed to be user-friendly and welcoming for text analysis. Voyant currently averages nearly 50,000 visits and about 750,000 tool invocations per month (not counting the downloadable instances of VoyantServer). This will be the seventh consecutive workshop of Voyant, with past sessions focusing on different aspects (pedagogy, multilingualism, customizability, standalone version, etc.). </p>
+            <p rend=""CM4"">The 2015 workshop will focus on the second major release of Voyant Tools (2.0), which represents an entire rewrite of the codebase to address several of the major shortcomings and irritants of the currently available version 1.0. Version 2.0 is currently available in a beta version online with a major release due in early spring 2015. In addition to performance improvements throughout, the search and filtering functionality have been vastly enhanced, and Voyant now supports proximity and n-gram operations. Voyant 2.0 also has improved corpus handling. Documents can be reordered or added to corpora on the fly, and there is a lightweight access management layer that differentiates between full access, full-text access, and expressive/consumptive access. </p>
+            <p rend=""CM4"">We have designed this workshop to be of interest both to new users of Voyant, who will get an introduction to the platform, and to existing users, who will discover all the new functionality 2.0 has to offer. As always, a crucial aspect of the workshop will be to get feedback from the community. </p>
+            <p rend=""CM3"">Workshop Outline </p>
+            <p rend=""CM2"">
+                <hi rend=""italic"">1. Introduction to Text Analysis with Voyant (1 hour) </hi>
+            </p>
+            <p rend=""CM4"">We will begin with a general introduction to text analysis using Voyant aimed at those who haven’t used it before. We will provide a brief overview of Voyant’s user interface and discuss its strengths and weaknesses. We will provide initial text collections that users can use with Voyant, with a view to having participants experiment subsequently with their own text collections. </p>
+            <p rend=""CM2"">
+                <hi rend=""italic"">2. Voyant 2.0: What’s New? (1 hour) </hi>
+            </p>
+            <p rend=""CM2"">This second part of the workshop will focus on what’s new in Voyant 2.0. Examples of changes include more powerful proximity and fuzzy searching of terms, infinite scrolling instead of paginated scrolling for tabular data, in-place modifications of corpora (adding documents or re-ordering them), and new tools (collocate networks, n-gram wordtrees, etc.). This part of the workshop will be useful both for users familiar with the old Voyant (to understand the changes and enhancements) and also to newcomers who will get a better sense of the variety of available tools. </p>
+            <p>
+                <hi rend=""italic"">3. Voyant: Text Repository or Analytic Platform? (1 hour) </hi>
+            </p>
+            <p rend=""CM4"">One benefit of the enhanced scalability of Voyant Tools 2.0 is the ability to bridge the gap between existing text repositories (typically focused on searching for documents) and analytic platforms (for text mining). We are collaborating with several large-scale content providers (like TCP-EEBO and Érudit.org) to create custom Voyant skins that allow users to search and filter within very large text collections in order to create smaller worksets of relevant documents for analysis. Because everything is happening in Voyant, the jump from text repository to text analysis is smooth and efficient (very few text repositories allow mass downloading of worksets, but even when they do, additional steps are typically required for re-ingesting the workset into an analytic platform). This component of the workshop will demonstrate some of our existing collaborations and describe how other content providers and projects might be able to leverage this hybrid functionality. </p>
+            <p rend=""CM3"">Workshop Leaders </p>
+            <p rend=""CM4"">
+                <hi rend=""italic"">Stéfan Sinclair</hi>, sgsinclair@gmail.com, is an associate professor in digital humanities at McGill University. His research focuses primarily on the design, development, and theorization of tools for the digital humanities, especially for text analysis and visualization. He has led or contributed significantly to projects such as Voyant Tools, the Text Analysis Portal for Research (TAPoR), and BonPatron. Other professional activities include serving as associate editor of 
+                <hi rend=""italic"">Digital Humanities Quarterly</hi>, as well as serving on the executive boards of ACH, CSDH/SCHN, ADHO, and centerNET. 
+            </p>
+            <p rend=""CM2"">
+                <hi rend=""italic"">Geoffrey Rockwell</hi>, grockwel@ualberta.ca, is a professor of philosophy and humanities computing at the University of Alberta, Canada. He has published and presented papers in the area of philosophical dialogue, textual visualization and analysis, humanities computing, instructional technology, computer games, and multimedia. He was the project leader for the CFI (Canada Foundation for Innovation)–funded project TAPoR, a Text Analysis Portal for Research (tapor.ca), which has developed a text tool portal for researchers who work with electronic texts. He is the author of 
+                <hi rend=""italic"">Defining Dialogue: From Socrates to the Internet </hi>(Humanity Books).
+            </p>
+            <p rend=""CM4"">Target Audience </p>
+            <p rend=""CM4"">A wide range of DH practitioners interested in text analysis, particularly for research, teaching, or technical support. Voyant Tools workshops are typically fully subscribed; we prefer to limit registration to about 25 people to allow us to help participants as needed. </p>
+            <p rend=""CM2"">Format</p>
+            <p rend=""CM2"">Half-day.</p>
+        </body>
+    </text>
+</TEI>",xml,Creative Commons Attribution 4.0 International,,text analysis;voyant,English,data mining / text mining;english;text analysis
+9773,2019 - Utrecht,Utrecht,Complexities,2019,ADHO,ADHO,Utrecht University,Utrecht,,Netherlands,http://staticweb.hum.uu.nl/dh2019/dh2019.adho.org/index.html,"The Complexities Of The Representation Of Xhosa Protagonists, Represented By Male And Female Authors In IsiXhosa Dramas Using Computational Methodologies",,Andiswa Bukula;Juan Steyn,"paper, specified ""short paper""","<text>
+        
+            <p>IsiXhosa is an Nguni language classified in the south-eastern geographical zone of South Africa (Guthrie, 1971:33). It is one of the official South African languages, and one of the most widely spoken (after isiZulu) with approximately eight million mother-tongue speakers. In terms of natural language processing, particularly computational morphology, the Nguni languages including isiXhosa belong to the lesser-studied languages of the world and can be classified as under-resourced languages. Nguni languages are characterised by a rich agglutinating morphological structure, based on two principles: the nominal classification system and the concordial agreement system (Bosch &amp; Pretorius, 2008:97).</p>
+            <p rend=""List Paragraph"">The principal author’s masters study focused on the representation of women protagonists by male and female authors in isiXhosa dramas. The whole analysis process was done manually, mainly because digitised isiXhosa literature books were not available. This limited the study to only four books. The analysis focused on gender inequality in the way women are represented by male authors, as opposed to the way in which women authors represent women protagonists, and also on patriarchal traces found in isiXhosa dramas.</p>
+            <p rend=""List Paragraph"">
+                <hi style=""font-family:Calisto MT;font-size:12pt"">When examining the representation of female protagonists in isiXhosa dramas, similar works from other scholars are noteworthy. The first contribution that narrates the same viewpoint as the one investigated here is by Ngqase (2002), in which she examines the representations of women in four isiXhosa drama books. The study highlights the interplay between culture and women's social space. The second contribution by Peter (2010) expresses female character portrayal in various drama works written by males. He concludes that many male writers are unwilling to portray female characters in their totality and true complexity, which is evident in the way some writers have resorted to the use of stereotypes (Peter, 2010:15).</hi>
+            </p>
+            <p>As an isiXhosa language researcher at the South African Centre for Digital Language Resources (SADiLaR), the principal author has been introduced to computational methods which could afford new ways to approach the research topic described. </p>
+            <p>Assessing and reporting on the usability of computational tools when analysing isiXhosa texts </p>
+            <p>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">This presentation reports on the same research topic, with the focus on computational methods to analyse the texts instead of manual approaches. The computational tools which were utilised include, Voyant Tools and regular expressions (regular expressions) as well as testing the feasibility of BookNLP when used conjunctively with written languages. </hi>
+            </p>
+            <p>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">The creators of </hi>
+                <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">Voyant Tools</hi>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> note that it supports analysis in any language since it mostly operates on character sequences; however, limited language-specific support is available (Sinclair &amp; Rockwell, 2019). Capitalisation in isiXhosa is of special importance in the proposed study as the language follows a pattern where the second letter of a word is capitalised instead of the first. For instance, the “Context” tool in Voyant Tools produces search terms only in lower case.</hi>
+            </p>
+            <p>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">With </hi>
+                <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">BookNLP</hi>
+                <hi style=""font-family:Calisto MT;font-size:12pt"">, which is specifically built for English texts, the authors will now focus on how successfully the sub-processes in its pipeline fare with a non-Western language and how it could be adapted and/or how a similar pipeline could be developed for isiXhosa using tools developed by SADiLaR. BookNLP was developed by Bamman, Underwood and Smith (2014). The study follows similar approaches to those utilised by Algee-Hewitt, Porter and Walser (2016).</hi>
+            </p>
+            <p>
+                <hi style=""font-family:Calisto MT;font-size:12pt"">Finally,</hi>
+                <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> regular expressions</hi>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> will be used as well, as it allows to match patterns and search for very specific character sequences more effectively.</hi>
+            </p>
+            <p>Operationalisation of the research questions</p>
+            <p>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">The study has two parts. First, by reporting on the performance of the computational tools on the isiXhosa drama corpus versus an English equivalent. The specific steps for Voyant Tools and differences when using regular expressions will be provided and compared. Second, in terms of research questions focusing on the representation of Xhosa protagonists by male and female authors, regular expressions was used as the main investigation tool. </hi>
+            </p>
+            <p>
+                <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">The paper reports on:</hi>
+            </p>
+            <list type=""ordered"">
+                <item>How can computational tools used to analyse Western languages be used for conjunctively written South African languages? </item>
+                <item>Are authors of isiXhosa literature influenced or led by their gender when writing? </item>
+                <item>
+                    <hi rend=""color(212121)"" style=""font-family:Calisto MT;font-size:12pt"">Do authors conceptualise their work with the intention to uplift one gender while diminishing the other?</hi>
+                </item>
+                <item>How can the gap caused by inequality between sexes be bridged through written literature? </item>
+            </list>
+            <p>A practical example:</p>
+            <p>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">If data from an English corpus is analysed using Voyant Tools, the tool would automatically be able to provide word frequencies and links between words. However, with a conjunctive language like isiXhosa, this would only be possible by making use of special search options, because the generic frequency table will be skewed owing to the difference in semantic properties of the words. For example, gender association in isiXhosa depends solely on the prefix. Only through the prefix will one be able to confirm whether a noun is referring to a single person or a group of people. Furthermore, only through contextualisation will one know whether that person is male or female, as isiXhosa prefixes are also unisex. </hi>
+            </p>
+            <p>
+                <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">E.g.:</hi>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> uPeter </hi>
+                <hi rend=""color(943634)"" style=""font-family:Calisto MT;font-size:12pt"">u</hi>
+                <hi style=""font-family:Calisto MT;font-size:12pt"">sela amanzi</hi>
+            </p>
+            <p>Peter (he) is drinking water</p>
+            <p>
+                <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">uSammy </hi>
+                <hi rend=""color(943634)"" style=""font-family:Calisto MT;font-size:12pt"">u</hi>
+                <hi style=""font-family:Calisto MT;font-size:12pt"">phunga iti.</hi>
+            </p>
+            <p>Sammy (she) is drinking tea.</p>
+            <p>This research also aims to provide a point of departure for new scholars interested in analysing isiXhosa literary works using computational approaches.</p>
+            <p>
+                <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">Key words</hi>
+                <hi style=""font-family:Calisto MT;font-size:12pt"">: Conjunctive language, Nguni language, computational methodologies, voyant tools, regular expressions, BookNLB</hi>
+            </p>
+        
+        <back>
+            <div type=""bibliogr"">
+                <listbibl>
+                    Bibliography
+                    <bibl>
+                        <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">Algee-Hewitt, M., Porter, J., Walser, H</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"">. (2016). Representations Of Race: Mining Identity In American Fiction, 1789-1964. In Digital Humanities 2016: Conference Abstracts. Jagiellonian University &amp; Pedagogical University, Kraków, pp. 111-112.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">Bamman, D., Underwood, T. and Smith, N. A.</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> (2014). A Bayesian Mixed Effects Model of Literary Character. </hi>
+                        <hi rend=""italic"" style=""font-family:Calisto MT;font-size:12pt"">Proceedings of the 52nd Annual Meeting of the Association for Computation Linguistics.</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> Baltimore, Maryland, pp. 370-79.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend=""bold color(333333)"" style=""font-family:Calisto MT;font-size:12pt"">Bosch, S., Pretorius, L. and Fleisch, A.</hi>
+                        <hi rend=""color(333333)"" style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> (2008). Experimental Bootstrapping of Morphological Analysers for Nguni Languages. </hi>
+                        <hi rend=""italic color(333333)"" style=""font-family:Calisto MT;font-size:12pt"">Nordic Journal of African Studies</hi>
+                        <hi rend=""color(333333)"" style=""font-family:Calisto MT;font-size:12pt""> 17(2):66-88.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">Guthrie, M.,</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> (1969). </hi>
+                        <hi rend=""italic"" style=""font-family:Calisto MT;font-size:12pt"">Comparative Bantu, Farnborough</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"">: Gregg, vol. 4.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">Guthrie, M.,</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> (1970). Contributions from Comparative Bantu studies to the prehistory of Africa.  </hi>
+                        <hi rend=""italic"" style=""font-family:Calisto MT;font-size:12pt"">Language and history in Africa.</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> (Dalby ed.), 1:1-27.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">Ngqase, F.F.,</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> (2002). </hi>
+                        <hi rend=""italic"" style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">The way in which women are portrayed in isiXhosa dramas. </hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"">B.A Thesis. University of Stellenbosch. Available at: (Accessed: 24 April 2019)</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">Peter, Z.W., </hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">(2010). </hi>
+                        <hi rend=""italic"" style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve"">The depiction of female characters by male writers in selected isiXhosa drama works. </hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"">BA Thesis. Nelson Mandela Metropolitan University. Available at:</hi>
+                        <ref target=""http://hdl.handle.net/10948/1482"">
+                            <hi style=""font-family:Calisto MT;font-size:12pt"">http://hdl.handle.net/10948/1482</hi>
+                        </ref>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> (Accessed: 24 April 2019)</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend=""bold"" style=""font-family:Calisto MT;font-size:12pt"">Sinclair, S. and Rockwell, G.</hi>
+                        <hi style=""font-family:Calisto MT;font-size:12pt"" xml:space=""preserve""> (2019) Languages.-</hi>
+                        <ref target=""https://voyant-tools.org/docs/%23!/guide/languages%20Date%20of%20access:%2024%20April%202019."">
+                            <hi style=""font-family:Calisto MT;font-size:12pt"">https://voyant-tools.org/docs/#!/guide/languages Date of access: 24 April 2019.</hi>
+                        </ref>
+                    </bibl>
+                </listbibl>
+            </div>
+        </back>
+    </text>",xml,This text is republished here with permission from the original rights holder.,,book nlb.;computational methodologies;conjunctive language;nguni language;regular expressions;voyant tools,English,african studies;content analysis;corpus and text analysis;english;gender studies
+10391,2021 - Alberta 2021,Alberta 2021,Making the Net Work,2021,CSDH/SCHN,CSDH/SCHN @ Congress,University of Alberta,Alberta,Alberta,Canada,https://docs.google.com/spreadsheets/d/110_WppEAjN-6R4FaLEnsCcGhkuwHKxvXBAKCfrfmn1w/edit#gid=0,Spyral Notebooks as a Supplement to Voyant Tools,https://hcommons.org/deposits/item/hc:38903/,Kaylin Land;Andrew MacDonald;Geoffrey Rockwell,paper,,txt,,10390,coding;digital humanities;javascript;notebook environments;spyral notebooks;text analytics;voyant tools,English,
+10394,2021 - Alberta 2021,Alberta 2021,Making the Net Work,2021,CSDH/SCHN,CSDH/SCHN @ Congress,University of Alberta,Alberta,Alberta,Canada,https://docs.google.com/spreadsheets/d/110_WppEAjN-6R4FaLEnsCcGhkuwHKxvXBAKCfrfmn1w/edit#gid=0,Speculating with Voyant: Designs for Data Walls,https://hcommons.org/deposits/item/hc:38921/,Bennett Kuwan Tchoh;Milena Radzikowska;Stan Ruecker;Kaylin Land;Andrew MacDonald;Geoffrey Rockwell,paper,,txt,,10390,data;data wall;interface design;text analysis;visualization;voyant tools,English,
