@@ -24,6 +24,6 @@ From there I used the resource we were given in class, https://www.w3schools.com
 
 If you would like to try, almost everything is clickable and interactive. A few things go the wrong places, but I'm proud nonetheless! 
 
-Here's a screenshot of my site! And [here is the site](
+Here's a screenshot of my site! And [here is the site](https://github.com/kfata2/is578-introduction-to-dh/blob/main/my%20DH%20page.html)!
 
 <img width="1439" alt="Screenshot 2023-11-08 at 8 26 17 PM" src="https://github.com/kfata2/is578-introduction-to-dh/assets/144085603/88d818a8-c05a-42cd-a7b8-49d9b9771b9e">
